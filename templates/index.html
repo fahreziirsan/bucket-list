@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Hello there" name="description">
+    <meta content="Fahrezi" name="keywords">
+    <meta property="og:site_name" content="Fahrezi">
+    <meta property="og:title" content="FahreziWHISTLIST">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1601024445121-e5b82f020549?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1920">
+    <meta property="og:image:height" content="1080">
+    <meta property="og:url" content="https://billynabil.vercel.app">
+    <meta property="og:description" content="FahreziWHISTLIST">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+
+    <title>Fadhil Bucket List</title>
+
+</head>
+
+<body>
+    <div class="mypic">
+        <h1>Fadhil Bucketlist</h1>
+    </div>
+    <div class="mybox">
+        <div class="mybucket">
+            <input id="bucket" class="form-control" type="text" placeholder="Enter your bucket list item here">
+            <button onclick="save_bucket()" type="button" class="btn btn-outline-primary">Save</button>
+        </div>
+    </div>
+    <div class="mybox" id="bucket-list">
+
+    </div>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+
+</html>
